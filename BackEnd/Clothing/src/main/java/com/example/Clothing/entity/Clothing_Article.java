@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 
 @Table(name="Clothing_Article")
-
+//lskdnvdosi nso ns ono ns oon
 @Entity // shows this is an object class and we want this as our table class
 public class Clothing_Article
 {
