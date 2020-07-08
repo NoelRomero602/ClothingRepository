@@ -9,7 +9,7 @@ DROP TABLE IF EXISTS `Clothing_Article`;
 
 CREATE TABLE `Clothing_Article` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `Category` varchar(45) DEFAULT NULL,
+  `category` varchar(45) DEFAULT NULL,
   `description` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;

@@ -2,10 +2,9 @@ package com.example.Clothing.entity;
 
 import javax.persistence.*;
 
-
+@Entity // shows this is an object class and we want this as our table class
 @Table(name="Clothing_Article")
 
-@Entity // shows this is an object class and we want this as our table class
 public class Clothing_Article
 {
 
@@ -14,60 +13,46 @@ public class Clothing_Article
    @Column(name="id")
     private int id;
 
-    @Column(name="first_Name")
-    private String firstName;
+    @Column(name="category")
+    private String category;
 
-    @Column(name="last_Name")
-    private String lastName;
+    @Column(name="description")
+    private String description;
 
-    @Column(name="email")
-    private String email;
+
 
  public void setId(int id) {
   this.id = id;
  }
-
- public void setFirstName(String firstName) {
-  this.firstName = firstName;
- }
-
- public void setLastName(String lastName) {
-  this.lastName = lastName;
- }
-
- public void setEmail(String email) {
-  this.email = email;
- }
-
  public int getId() {
   return id;
  }
-
- public String getFirstName() {
-  return firstName;
+ public void setCategory(String catagory) {
+  this.category = catagory;
  }
 
- public String getLastName() {
-  return lastName;
+ public String getCategory() {
+  return category;
  }
 
- public String getEmail() {
-  return email;
+ public String getDescription() {
+  return description;
  }
-public Clothing_Article(){}
- public Clothing_Article(String firstName, String lastName, String email) {
-  this.email = email;
-  this.firstName = firstName;
-  this.lastName = lastName;
+
+
+public Clothing_Article(){} // id is primary key so we dont include it
+ public Clothing_Article(String category, String description) {
+  this.description = description;
+  this.category = category;
+
  }
 
  @Override
  public String toString() {
   return "Employee{" +
           "id=" + id +
-          ", firstName='" + firstName + '\'' +
-          ", lastName='" + lastName + '\'' +
-          ", email='" + email + '\'' +
+          ", category='" + category + '\'' +
+          ", description='" + description + '\'' +
           '}';
  }
 }
