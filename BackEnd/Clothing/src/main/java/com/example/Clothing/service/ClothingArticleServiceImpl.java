@@ -30,7 +30,7 @@ public class ClothingArticleServiceImpl implements Clothing_Article_Service {
         Clothing_Article theClothingArticle =  null;
         if(result.isPresent()){
             theClothingArticle = result.get();}
-        else throw new RuntimeException("did not clothing article "+theId);
+        else throw new RuntimeException("did not find clothing article "+theId);
         return theClothingArticle;
     }
 

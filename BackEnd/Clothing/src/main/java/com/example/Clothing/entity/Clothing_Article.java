@@ -47,12 +47,4 @@ public Clothing_Article(){} // id is primary key so we dont include it
 
  }
 
- @Override
- public String toString() {
-  return "Employee{" +
-          "id=" + id +
-          ", category='" + category + '\'' +
-          ", description='" + description + '\'' +
-          '}';
- }
 }
